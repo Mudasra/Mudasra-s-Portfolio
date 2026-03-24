@@ -31,7 +31,7 @@ export function About() {
           transition: "all 0.7s ease",
         }}
       >
-        <SectionHeader title="How I Show Up For My Clients" />
+        <SectionHeader title="Your Dedicated Website Builder" />
 
         <div
           style={{
@@ -51,7 +51,7 @@ export function About() {
 
           <AboutContent
             primaryText="I'm Mudasra, a web developer who specializes in building websites
-              for Business and Career Coaches. I chose this niche because I
+              for Career Coaches. I chose this niche because I
               believe great coaches deserve a website that actually reflects how
               good they are, and most don't have that yet."
             secondaryText="I don't just build websites. I build your online sales system, one

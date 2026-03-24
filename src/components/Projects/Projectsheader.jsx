@@ -21,7 +21,7 @@ export function ProjectsHeader({ visible }) {
           margin: "12px 0 0",
         }}
       >
-        Coaches I've Helped
+        Featured Projects
       </h2>
     </div>
   );
