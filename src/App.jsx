@@ -1,8 +1,11 @@
+import { About } from "./components/About/About"
 
 function App() {
 
   return (
-    <h className="text-3xl font-bold underline">Hello</h>
+    <div style={{ }}>
+      <About />
+    </div>
   )
 }
 
