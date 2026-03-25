@@ -12,33 +12,63 @@ const stackItems = [
 ];
 
 export function TechOrb({ mounted }) {
+  const radius = 120;
+  const size = radius * 2;
+
   return (
     <div
       style={{
+        width: "100%",
+        height: "100%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         opacity: mounted ? 1 : 0,
-        transition: "all 1s ease 0.3s",
+        transition: "opacity 1s ease 0.3s",
       }}
     >
-      {/* Outer Container */}
+      {/* Orb container */}
       <div
         style={{
-          width: 280,
-          height: 280,
-          borderRadius: "50%",
-          border: "1px solid #1F2937",
+          width: 320,
+          height: 320,
           position: "relative",
         }}
       >
-        {/* Rotating Ring */}
+        {/* OUTER FAINT RING */}
         <div
           style={{
             position: "absolute",
-            width: "100%",
-            height: "100%",
-            animation: "spin 40s linear infinite",
+            left: "50%",
+            top: "50%",
+            width: 320,
+            height: 320,
+            transform: "translate(-50%, -50%)",
+            borderRadius: "50%",
+            border: "1px solid rgba(255,255,255,0.05)",
+          }}
+        />
+
+        {/* ORBIT PATH (STATIC) */}
+        <div
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            width: size,
+            height: size,
+            transform: "translate(-50%, -50%)",
+            borderRadius: "50%",
+            border: "1px solid rgba(0,212,255,0.15)",
+          }}
+        />
+
+        {/* ROTATING RING */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            animation: "spin 45s linear infinite",
           }}
         >
           {stackItems.map((item, i) => {
@@ -51,15 +81,17 @@ export function TechOrb({ mounted }) {
                   position: "absolute",
                   left: "50%",
                   top: "50%",
-                  transform: `
-                    translate(-50%, -50%)
-                    rotate(${angle}deg)
-                    translate(120px)
-                  `,
+                  transform: `rotate(${angle}deg) translate(${radius}px)`,
+                  transformOrigin: "0 0",
                 }}
               >
-                {/* Keep text straight */}
-                <div style={{ transform: `rotate(-${angle}deg)` }}>
+                {/* Counter-rotate text (so it's always readable) */}
+                <div
+                  style={{
+                    transform: "translate(-50%, -50%)",
+                    animation: "spin 45s linear infinite reverse",
+                  }}
+                >
                   <Badge>{item}</Badge>
                 </div>
               </div>
@@ -67,7 +99,7 @@ export function TechOrb({ mounted }) {
           })}
         </div>
 
-        {/* Center React Icon */}
+        {/* CENTER CORE */}
         <div
           style={{
             position: "absolute",
@@ -77,11 +109,13 @@ export function TechOrb({ mounted }) {
             width: 120,
             height: 120,
             borderRadius: "50%",
-            background: "linear-gradient(135deg, #00D4FF20, #764ABC20)",
+            background:
+              "linear-gradient(135deg, #00D4FF20, #764ABC20)",
             border: "1px solid #00D4FF30",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            boxShadow: "0 0 40px #00D4FF20",
           }}
         >
           <FaReact size={48} color="#00D4FF" />

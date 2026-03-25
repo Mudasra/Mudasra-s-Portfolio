@@ -109,12 +109,11 @@ a:hover {
   color: "#F9FAFB";
 }
 
-@keyframes orbit {
+@keyframes spin {
   from {
-    transform: rotate(0deg) translate(130px);
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translate(130px);
+    transform: rotate(360deg);
   }
 }
-
