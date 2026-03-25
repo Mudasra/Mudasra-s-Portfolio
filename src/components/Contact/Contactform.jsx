@@ -5,6 +5,7 @@ import { SituationTypeRow } from "./SituationTypeRow";
 import { MessageField } from "./MessageField";
 import { ServerErrorBanner } from "./ServerErrorBanner";
 import { Button } from "../Button";
+import { ContactSuccess } from "./Contactsuccess";
 
 const INITIAL_FORM = { name: "", email: "", situation: "", type: "", message: "" };
 
@@ -38,6 +39,7 @@ export function ContactForm({ visible }) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [serverError, setServerError] = useState(false);
+  const [submittedName, setSubmittedName] = useState("");
 
   const update = (field) => (e) => setForm({ ...form, [field]: e.target.value });
   const getInputStyle = (field) => inputStyle(errors, field);
@@ -63,6 +65,7 @@ export function ContactForm({ visible }) {
       });
 
       if (res.ok) {
+        setSubmittedName(form.name);
         setSubmitted(true);
       } else {
         setServerError(true);
@@ -88,7 +91,7 @@ export function ContactForm({ visible }) {
       }}
     >
       {submitted ? (
-        <ContactSuccess onReset={handleReset} />
+        <ContactSuccess onReset={handleReset} name={submittedName} />
       ) : (
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
           <NameEmailRow form={form} errors={errors} inputStyle={getInputStyle} onUpdate={update} />
