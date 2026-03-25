@@ -21,7 +21,7 @@ export function ServicesHeader({ visible }) {
           margin: "12px 0 20px",
         }}
       >
-        For Business & Career Coaches
+        For Career Coaches
       </h2>
       <p
         style={{
@@ -32,7 +32,7 @@ export function ServicesHeader({ visible }) {
           lineHeight: 1.7,
         }}
       >
-        I help Business & Career Coaches build{" "}
+        I help Career Coaches build{" "}
         <span style={{ color: "#00D4FF" }}>high-converting landing pages</span>{" "}
         and personal portfolios that attract premium clients.
       </p>

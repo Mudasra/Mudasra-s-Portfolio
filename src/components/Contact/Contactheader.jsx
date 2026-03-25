@@ -21,7 +21,7 @@ export function ContactHeader({ visible }) {
           margin: "12px 0 0",
         }}
       >
-        Let's Get You More Clients
+        Get a Website That Wins You Clients
       </h2>
     </div>
   );
