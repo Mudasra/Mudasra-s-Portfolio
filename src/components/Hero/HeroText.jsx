@@ -62,7 +62,7 @@ export function HeroText({ mounted }) {
           marginBottom: 40,
         }}
       >
-        If you're a Business or Career Coach, your website should be your best
+        If you're a Career Coach, your website should be your best
         salesperson, working around the clock, building trust before the first
         call, and turning the right visitors into booked discovery calls. I make
         that happen. No tech headaches. Just a site that works.{" "}
