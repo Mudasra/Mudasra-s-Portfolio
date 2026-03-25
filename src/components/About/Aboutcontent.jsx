@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../Button";
 
-export function AboutContent({ primaryText, secondaryText, ctaLabel, ctaHref }) {
+export function AboutContent({ primaryText, secondaryText, tertiaryText }) {
   return (
     <div>
       <p
@@ -24,9 +24,17 @@ export function AboutContent({ primaryText, secondaryText, ctaLabel, ctaHref }) 
       >
         {secondaryText}
       </p>
-      <Button variant="primary" href={ctaHref}>
-        {ctaLabel}
-      </Button>
+      <p
+        style={{
+          color: "#6B7280",
+          fontSize: 16,
+          lineHeight: 1.9,
+          marginBottom: 40,
+        }}
+      >
+        {tertiaryText}
+      </p>
+
     </div>
   );
 }

@@ -58,8 +58,7 @@ export function About() {
               that positions you as the premium choice, pre-qualifies your
               leads, and has potential clients ready to say yes before they even
               contact you."
-            ctaLabel="Download CV ↓"
-            ctaHref="#"
+            tertiaryText="Every design decision I make is focused on turning visitors into booked calls, highlighting your expertise, and creating a seamless experience that builds trust instantly."
           />
         </div>
       </div>
