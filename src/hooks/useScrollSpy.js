@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { NAV_LINKS } from "../constants/Testimonials";
-
+import { NAV_LINKS } from "../constants/Values";
 
 
 export function useScrollSpy() {

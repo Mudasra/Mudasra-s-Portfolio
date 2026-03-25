@@ -1,6 +1,10 @@
+import { LuMessageSquareText } from "react-icons/lu";
+import { LuMousePointerClick } from "react-icons/lu";
+import { IoShieldCheckmarkOutline } from "react-icons/io5";
+
 export const VALUES = [
   {
-    icon: "🚀",
+    icon: <LuMessageSquareText  size={28} color="#00D4FF" strokeWidth={1.5} />,
     title: "Clear Messaging",
     desc: "Your visitors should understand who you help and what you do within seconds.",
     features: [
@@ -11,7 +15,7 @@ export const VALUES = [
     ],
   },
   {
-    icon: "✍️",
+    icon: <LuMousePointerClick  size={28} color="#00D4FF" strokeWidth={1.5} />,
     title: "Strong Calls to Action",
     desc: "Every page guides visitors toward booking a call or taking the next step.",
     features: [
@@ -22,7 +26,7 @@ export const VALUES = [
     ],
   },
   {
-    icon: "</>",
+    icon: <IoShieldCheckmarkOutline   size={28} color="#00D4FF" strokeWidth={1.5} />,
     title: "Trust & Performance",
     desc: "Clean, fast, and polished design that builds trust instantly.",
     features: [
@@ -33,3 +37,6 @@ export const VALUES = [
     ],
   },
 ];
+
+
+export const NAV_LINKS = ["Home", "About", "Projects", "Services", "Contact"];

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { VALUES } from "../constants/Values";
 import { ServiceCard } from "./Services/Servicecard";
+import { VALUES } from "../constants/Values";
 
 export function ValueSection() {
   const [visible, setVisible] = useState(false);

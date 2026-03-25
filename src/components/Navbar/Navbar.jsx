@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { NavLogo } from "./NavLogo";
 import { DesktopNav } from "./DesktopNav";
 import { HamburgerButton } from "./HamburgerButton";
-import { MobileMenu } from "./MobileMenu";
-import { NAV_LINKS } from "../../constants/Testimonials";
+import { NAV_LINKS } from "../../constants/Values";
+
 
 export function Navbar({ active }) {
   const [scrolled, setScrolled] = useState(false);
