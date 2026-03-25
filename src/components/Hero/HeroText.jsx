@@ -76,7 +76,7 @@ export function HeroText({ mounted }) {
               ?.scrollIntoView({ behavior: "smooth" })
           }
         >
-          See Coach Websites →
+          View Featured Projects →
         </Button>
         <Button
           variant="outline"
