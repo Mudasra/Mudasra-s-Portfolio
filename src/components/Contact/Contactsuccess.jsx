@@ -1,38 +1,3 @@
-// import React from "react";
-// import { Button } from "../Button";
-// import { Check } from "lucide-react";
-// import { CgEnter } from "react-icons/cg";
-
-// export function ContactSuccess({ onReset }) {
-//   return (
-//     <div style={{ textAlign: "center", padding: "40px 0" }}>
-//       <div style={{ fontSize: 100, marginBottom: 20 }}> 
-//         <Check />
-//       </div>
-//       <h3 style={{
-//         fontSize: 24, fontWeight: 800,
-//         fontFamily: "'Syne', sans-serif",
-//         color: "#F9FAFB", marginBottom: 12,
-//       }}>
-//         Message Sent!
-//       </h3>
-//       <p style={{ color: "#6B7280", fontSize: 15 }}>
-//         I'll get back to you within 24 hours. Looking forward to working together!
-//       </p>
-//       <Button variant="outline" onClick={onReset} style={{ marginTop: 24 }}>
-//         Send Another
-//       </Button>
-//     </div>
-//   );
-// }
-
-
-
-
-
-
-
-
 import React from "react";
 import { Button } from "../Button";
 import { Check } from "lucide-react";

@@ -6,12 +6,14 @@ import { Navbar } from "./components/Navbar/Navbar"
 import { Projects } from "./components/Projects/Projects"
 import { Services } from "./components/Services/Services"
 import { Testimonials } from "./components/Testimonials/Testimonials"
+import { useScrollSpy } from "./hooks/useScrollSpy"
 
 function App() {
+    const active = useScrollSpy();
 
   return (
     <div style={{ }}>
-      <Navbar />
+      <Navbar active={active} />
       <Hero />
       <About />
       <Projects />
