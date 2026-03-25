@@ -6,7 +6,7 @@ export const VALUES = [
   {
     icon: <LuMessageSquareText  size={28} color="#00D4FF" strokeWidth={1.5} />,
     title: "Clear Messaging",
-    desc: "Your visitors should understand who you help and what you do within seconds.",
+    desc: "Visitors immediately understand who you help and what you do within seconds.",
     features: [
       "Clear offer & positioning",
       "Speak to your ideal client",

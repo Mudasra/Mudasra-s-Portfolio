@@ -29,7 +29,7 @@ export function ValueSection() {
             marginBottom: 64,
           }}
         >
-          What Your Website Should Do
+          Websites That would Convert and Build Trust
         </h2>
 
         <div
