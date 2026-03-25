@@ -5,7 +5,7 @@ import { Hero } from "./components/Hero/Hero"
 import { Navbar } from "./components/Navbar/Navbar"
 import { Projects } from "./components/Projects/Projects"
 import { Services } from "./components/Services/Services"
-import { Testimonials } from "./components/Testimonials/Testimonials"
+import { ValueSection } from "./components/ValueSection"
 import { useScrollSpy } from "./hooks/useScrollSpy"
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <About />
       <Projects />
       <Services />
-      <Testimonials />
+      <ValueSection />
       <Contact />
       <Footer />
     </div>
