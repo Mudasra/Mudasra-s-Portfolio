@@ -1,5 +1,5 @@
 import React from "react";
-import { Atom } from "lucide-react";
+import { FaReact } from "react-icons/fa6";
 import { Badge } from "../Badge";
 
 const stackItems = [
@@ -9,8 +9,6 @@ const stackItems = [
   "Vite",
   "JS ES6+",
   "REST API",
-  "Git",
-  "Framer",
 ];
 
 export function TechOrb({ mounted }) {
@@ -18,28 +16,64 @@ export function TechOrb({ mounted }) {
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
-        gap: 20,
+        justifyContent: "center",
         alignItems: "center",
         opacity: mounted ? 1 : 0,
         transition: "all 1s ease 0.3s",
       }}
     >
+      {/* Outer Container */}
       <div
         style={{
           width: 280,
           height: 280,
           borderRadius: "50%",
           border: "1px solid #1F2937",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
           position: "relative",
-          animation: "spin 30s linear infinite",
         }}
       >
+        {/* Rotating Ring */}
         <div
           style={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            animation: "spin 40s linear infinite",
+          }}
+        >
+          {stackItems.map((item, i) => {
+            const angle = (i / stackItems.length) * 360;
+
+            return (
+              <div
+                key={item}
+                style={{
+                  position: "absolute",
+                  left: "50%",
+                  top: "50%",
+                  transform: `
+                    translate(-50%, -50%)
+                    rotate(${angle}deg)
+                    translate(120px)
+                  `,
+                }}
+              >
+                {/* Keep text straight */}
+                <div style={{ transform: `rotate(-${angle}deg)` }}>
+                  <Badge>{item}</Badge>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Center React Icon */}
+        <div
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%, -50%)",
             width: 120,
             height: 120,
             borderRadius: "50%",
@@ -48,32 +82,10 @@ export function TechOrb({ mounted }) {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            animation: "spin 30s linear infinite reverse",
           }}
         >
-          <Atom size={48} color="#00D4FF" strokeWidth={1.5} />
+          <FaReact size={48} color="#00D4FF" />
         </div>
-
-        {stackItems.slice(0, 6).map((item, i) => {
-          const angle = (i / 6) * 2 * Math.PI;
-          const r = 130;
-          const x = Math.cos(angle) * r;
-          const y = Math.sin(angle) * r;
-          return (
-            <div
-              key={item}
-              style={{
-                position: "absolute",
-                left: "50%",
-                top: "50%",
-                transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
-                animation: `spin 30s linear infinite reverse`,
-              }}
-            >
-              <Badge>{item}</Badge>
-            </div>
-          );
-        })}
       </div>
     </div>
   );

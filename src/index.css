@@ -108,3 +108,13 @@ a:hover {
   background: "#0A0F1E";
   color: "#F9FAFB";
 }
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translate(130px);
+  }
+  to {
+    transform: rotate(360deg) translate(130px);
+  }
+}
+
