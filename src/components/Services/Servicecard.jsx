@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
-import { ServiceCardIcon } from "./ServiceCardIcon";
-import { ServiceCardFeatureList } from "./ServiceCardFeatureList";
+import { ServiceCardIcon } from "./Servicecardicon";
+import { ServiceCardFeatureList } from "./Servicecardfeaturelist";
 
 export function ServiceCard({ service: s, delay, visible }) {
   const [hovered, setHovered] = useState(false);

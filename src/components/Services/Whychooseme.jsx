@@ -1,6 +1,6 @@
 import React from "react";
 import { Timer, Smartphone, Target, Wrench } from "lucide-react";
-import { BenefitItem } from "./BenefitItem";
+import { BenefitItem } from "./Benefititem";
 
 const BENEFITS = [
   [

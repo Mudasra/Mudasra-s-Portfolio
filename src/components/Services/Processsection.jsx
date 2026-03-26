@@ -1,6 +1,6 @@
 import React from "react";
 import { SearchCheck, Palette, LayoutDashboard, Zap } from "lucide-react";
-import { ProcessStep } from "./ProcessStep";
+import { ProcessStep } from "./Processstep";
 
 const STEPS = [
   [

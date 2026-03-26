@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
-import { ServicesHeader } from "./ServicesHeader";
-import { ServiceCardGrid } from "./ServiceCardGrid";
-import { WhyChooseMe } from "./WhyChooseMe";
-import { ProcessSection } from "./ProcessSection";
+import { ServicesHeader } from "./Servicesheader";
+import { ServiceCardGrid } from "./Servicecardgrid";
+import { WhyChooseMe } from "./Whychooseme";
+import { ProcessSection } from "./Processsection";
 import { CTABanner } from "./CTABanner";
 import { SERVICES } from "../../constants/Services";
 
