@@ -33,7 +33,6 @@ This is my personal portfolio, built from scratch with no UI libraries or compon
 | **Lucide React** | Icon library |
 | **React Icons** | Supplemental icons |
 | **Formspree** | Contact form backend (no server needed) |
-| **CSS-in-JS** | Inline styles for scoped, portable styling |
 
 ---
 
