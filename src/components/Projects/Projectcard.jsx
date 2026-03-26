@@ -1,8 +1,8 @@
 import { useState } from "react";
 import React from "react";
-import { CardGradientOverlay } from "./CardGradientOverlay";
-import { CardHeader } from "./CardHeader";
-import { CardBody } from "./CardBody";
+import { CardGradientOverlay } from "./Cardgradientoverlay";
+import { CardHeader } from "./Cardheader";
+import { CardBody } from "./Cardbody";
 
 export function ProjectCard({ project: p, delay, visible }) {
   const [hovered, setHovered] = useState(false);

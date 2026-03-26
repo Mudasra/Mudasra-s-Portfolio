@@ -1,5 +1,5 @@
 import React from "react";
-import { FilterTab } from "./FilterTab";
+import { FilterTab } from "./Filtertab";
 
 export function FilterTabs({ categories, activeFilter, onFilterChange }) {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
-import { ProjectsHeader } from "./ProjectsHeader";
-import { FilterTabs } from "./FilterTabs";
-import { ProjectGrid } from "./ProjectGrid";
+import { ProjectsHeader } from "./Projectsheader";
+import { FilterTabs } from "./Filtertabs";
+import { ProjectGrid } from "./Projectgrid";
 import { PROJECTS } from "../../constants/Projects";
 
 export function Projects() {
