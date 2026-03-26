@@ -1,4 +1,4 @@
-# mudasra.dev : Personal Portfolio
+# Mudasra : Personal Portfolio
 
 A fully responsive, component-driven portfolio site built with React and Vite. Designed and developed by **Mudasra Manzar** , a web developer specializing in websites for Career Coaches.
 
