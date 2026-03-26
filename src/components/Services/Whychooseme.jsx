@@ -6,7 +6,7 @@ const BENEFITS = [
   [
     <Timer size={28} color="#00D4FF" strokeWidth={1.5} />,
     "More Discovery Calls",
-    "Every design decision is made with one goal — getting your ideal client to book a call.",
+    "Every design decision is made with one goal, getting your ideal client to book a call.",
   ],
   [
     <Smartphone size={28} color="#00D4FF" strokeWidth={1.5} />,
@@ -16,7 +16,7 @@ const BENEFITS = [
   [
     <Target size={28} color="#00D4FF" strokeWidth={1.5} />,
     "Leads That Arrive Pre-Sold",
-    "Your site speaks directly to your ideal client — so by the time they reach out, they're already interested.",
+    "Your site speaks directly to your ideal client, so by the time they reach out, they're already interested.",
   ],
   [
     <Wrench size={28} color="#00D4FF" strokeWidth={1.5} />,

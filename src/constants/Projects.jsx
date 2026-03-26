@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     id: 1,
     title: "CoachFlow",
-    desc: "A high-converting website for a business coach that helped her attract premium clients and cut her sales call no-shows by 40% — built with a clear offer, social proof, and a frictionless booking flow.",
+    desc: "A high-converting website for a business coach that helped her attract premium clients and cut her sales call no-shows by 40%, built with a clear offer, social proof, and a frictionless booking flow.",
     tags: ["Landing Page", "Booking Flow", "Mobile-First"],
     cat: "Landing Pages",
     live: "#",
@@ -12,7 +12,7 @@ export const PROJECTS = [
   {
     id: 2,
     title: "CareerSync",
-    desc: "An online home for a career coach — showcasing her story, methodology, and packages in a way that pre-qualifies leads before they even book a call. Includes a built-in scheduling system and client intake form.",
+    desc: "An online home for a career coach, showcasing her story, methodology, and packages in a way that pre-qualifies leads before they even book a call. Includes a built-in scheduling system and client intake form.",
     tags: ["Portfolio", "Scheduling", "Lead Generation"],
     cat: "Web Apps",
     live: "#",
@@ -22,7 +22,7 @@ export const PROJECTS = [
   {
     id: 3,
     title: "The Clarity Method",
-    desc: "A personal brand website for an executive coach targeting corporate clients. Clean, authoritative design with a speaking page, media kit, and newsletter opt-in — built to open doors with high-value clients.",
+    desc: "A personal brand website for an executive coach targeting corporate clients. Clean, authoritative design with a speaking page, media kit, and newsletter opt-in, built to open doors with high-value clients.",
     tags: ["Personal Brand", "Executive Coaching", "Newsletter"],
     cat: "Personal Brand",
     live: "#",
@@ -32,7 +32,7 @@ export const PROJECTS = [
   {
     id: 4,
     title: "BrandBoard",
-    desc: "A client portal for a group coaching program — members log in to access resources, track progress, and book 1:1 sessions. Replaced a clunky spreadsheet system and saved the coach 5+ hours per week.",
+    desc: "A client portal for a group coaching program, members log in to access resources, track progress, and book 1:1 sessions. Replaced a clunky spreadsheet system and saved the coach 5+ hours per week.",
     tags: ["Client Portal", "Group Coaching", "Automation"],
     cat: "Web Apps",
     live: "#",
