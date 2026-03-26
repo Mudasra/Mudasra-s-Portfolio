@@ -4,7 +4,7 @@ import { ServicesHeader } from "./Servicesheader";
 import { ServiceCardGrid } from "./Servicecardgrid";
 import { WhyChooseMe } from "./Whychooseme";
 import { ProcessSection } from "./Processsection";
-import { CTABanner } from "./CTABanner";
+import { CTABanner } from "./Ctabanner";
 import { SERVICES } from "../../constants/Services";
 
 export function Services() {
