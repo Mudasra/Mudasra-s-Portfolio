@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
-import { ProfileCard } from "./ProfileCard";
+import { ProfileCard } from "./Profilecard";
 import ProfilePicture from "./profile-picture.png";
 import { AboutContent } from "./Aboutcontent";
 import { SectionHeader } from "./Sectionheader";
