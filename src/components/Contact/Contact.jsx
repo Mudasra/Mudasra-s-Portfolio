@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { ContactInfo } from "./ContactInfo";
-import { ContactForm } from "./ContactForm";
-import { ContactHeader } from "./ContactHeader";
+import { ContactInfo } from "./Contactinfo";
+import { ContactForm } from "./Contactform";
+import { ContactHeader } from "./Contactheader";
 import React from "react";
 
 export function Contact() {

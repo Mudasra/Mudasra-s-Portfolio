@@ -1,9 +1,9 @@
 import { useState } from "react";
 import React from "react";
-import { NameEmailRow } from "./NameEmailRow";
-import { SituationTypeRow } from "./SituationTypeRow";
-import { MessageField } from "./MessageField";
-import { ServerErrorBanner } from "./ServerErrorBanner";
+import { NameEmailRow } from "./Nameemailrow";
+import { SituationTypeRow } from "./Situationtyperow";
+import { MessageField } from "./Messagefield";
+import { ServerErrorBanner } from "./Servererrorbanner";
 import { Button } from "../Button";
 import { ContactSuccess } from "./Contactsuccess";
 
