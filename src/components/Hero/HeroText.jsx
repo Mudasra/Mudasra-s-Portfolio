@@ -86,7 +86,7 @@ export function HeroText({ mounted }) {
               ?.scrollIntoView({ behavior: "smooth" })
           }
         >
-          Book a Free Call
+          Get in Touch
         </Button>
       </div>
     </div>
