@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
-import { SectionHeader } from "./SectionHeader";
 import { ProfileCard } from "./ProfileCard";
-import { AboutContent } from "./AboutContent";
 import ProfilePicture from "./profile-picture.png";
+import { AboutContent } from "./Aboutcontent";
+import { SectionHeader } from "./SectionHeader";
 
 export function About() {
   const [visible, setVisible] = useState(false);
