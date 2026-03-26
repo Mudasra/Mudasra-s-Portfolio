@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { NavLogo } from "./NavLogo";
-import { DesktopNav } from "./DesktopNav";
-import { HamburgerButton } from "./HamburgerButton";
+import { NavLogo } from "./Navlogo";
+import { DesktopNav } from "./Desktopnav";
+import { HamburgerButton } from "./Hamburgerbutton";
 import { NAV_LINKS } from "../../constants/Values";
 
 
