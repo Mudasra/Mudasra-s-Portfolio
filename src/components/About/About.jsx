@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { ProfileCard } from "./ProfileCard";
 import ProfilePicture from "./profile-picture.png";
 import { AboutContent } from "./Aboutcontent";
-import  { SectionHeader } from "./SectionHeader";
+import { SectionHeader } from "./Sectionheader";
 
 export function About() {
   const [visible, setVisible] = useState(false);
