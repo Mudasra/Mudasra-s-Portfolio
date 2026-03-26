@@ -1,5 +1,5 @@
 import React from "react";
-import { StatBadge } from "./StatBadge";
+import { StatBadge } from "./Statbadge";
 
 export function ProfileCard({ imageSrc, imageAlt, badgeValue, badgeLabel }) {
   return (
