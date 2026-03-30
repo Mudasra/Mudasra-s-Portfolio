@@ -31,6 +31,40 @@ export function ProjectCard({ project: p, delay, visible }) {
       <CardGradientOverlay hovered={hovered} gradient={p.gradient} />
 
       <div style={{ position: "relative", zIndex: 1 }}>
+        {p.image && (
+          <a
+            href={p.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <div
+              style={{
+                borderRadius: 12,
+                overflow: "hidden",
+                marginBottom: 20,
+                border: "1px solid #1F2937",
+                aspectRatio: "16/9",
+                cursor: "pointer",
+              }}
+            >
+              <img
+                src={p.image}
+                alt={p.title}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "top",
+                  display: "block",
+                  transition: "transform 0.4s ease",
+                  transform: hovered ? "scale(1.03)" : "scale(1)",
+                }}
+              />
+            </div>
+          </a>
+        )}
+
         <CardHeader cat={p.cat} github={p.github} live={p.live} />
         <CardBody title={p.title} desc={p.desc} tags={p.tags} />
       </div>
