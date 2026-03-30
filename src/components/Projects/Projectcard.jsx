@@ -46,6 +46,7 @@ export function ProjectCard({ project: p, delay, visible }) {
                 border: "1px solid #1F2937",
                 aspectRatio: "16/9",
                 cursor: "pointer",
+                position: "relative", // 👈 add this
               }}
             >
               <img
@@ -61,6 +62,35 @@ export function ProjectCard({ project: p, delay, visible }) {
                   transform: hovered ? "scale(1.03)" : "scale(1)",
                 }}
               />
+
+              {/* Hover overlay with button */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background: "rgba(0,0,0,0.45)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  opacity: hovered ? 1 : 0,
+                  transition: "opacity 0.3s ease",
+                }}
+              >
+                <span
+                  style={{
+                    padding: "8px 20px",
+                    borderRadius: 99,
+                    background: "#00D4FF",
+                    color: "#0A0F1E",
+                    fontSize: 13,
+                    fontWeight: 700,
+                    fontFamily: "'Syne', sans-serif",
+                    letterSpacing: "0.02em",
+                  }}
+                >
+                  Live Demo ↗
+                </span>
+              </div>
             </div>
           </a>
         )}
