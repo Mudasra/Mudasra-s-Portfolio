@@ -10,9 +10,9 @@ export function Projects() {
   const [visible, setVisible] = useState(false);
   const ref = useRef(null);
   const categories = [
-    "All",
-    "Landing Pages",
-    "Coach Funnels"
+    // "All",
+    // "Landing Pages",
+    // "Coach Funnels"
   ];
 
   useEffect(() => {
