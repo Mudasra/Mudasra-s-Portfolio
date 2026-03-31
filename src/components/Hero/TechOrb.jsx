@@ -27,7 +27,6 @@ export function TechOrb({ mounted }) {
         transition: "opacity 1s ease 0.3s",
       }}
     >
-      {/* Orb container */}
       <div
         style={{
           width: 320,
@@ -35,7 +34,6 @@ export function TechOrb({ mounted }) {
           position: "relative",
         }}
       >
-        {/* OUTER FAINT RING */}
         <div
           style={{
             position: "absolute",
@@ -49,7 +47,6 @@ export function TechOrb({ mounted }) {
           }}
         />
 
-        {/* ORBIT PATH (STATIC) */}
         <div
           style={{
             position: "absolute",
@@ -63,7 +60,6 @@ export function TechOrb({ mounted }) {
           }}
         />
 
-        {/* ROTATING RING */}
         <div
           style={{
             position: "absolute",
@@ -85,7 +81,6 @@ export function TechOrb({ mounted }) {
                   transformOrigin: "0 0",
                 }}
               >
-                {/* Counter-rotate text (so it's always readable) */}
                 <div
                   style={{
                     transform: "translate(-50%, -50%)",
@@ -99,7 +94,6 @@ export function TechOrb({ mounted }) {
           })}
         </div>
 
-        {/* CENTER CORE */}
         <div
           style={{
             position: "absolute",

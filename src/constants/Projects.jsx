@@ -3,7 +3,7 @@ export const PROJECTS = [
     id: 1,
     title: "Jordan Mitchell Coach",
     image: "/Landing-Page.png",
-    // desc: "A high-converting coaching website for a tech career transition coach helping marketing managers break into PM roles. Features a persuasive above-the-fold hook, before/after case studies, social proof, a live countdown booking section, and a mobile-first layout built to turn visitors into booked strategy calls.",
+    // desc: "Tech Career Coaching · Landing Page",
     tags: ["Landing Page", "Booking Flow", "Mobile-First"],
     cat: "Landing Page",
     live: "https://coach-landingpage.vercel.app/",
