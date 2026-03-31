@@ -80,39 +80,50 @@ export function ContactForm({ visible }) {
   const handleReset = () => { setSubmitted(false); setForm(INITIAL_FORM); };
 
   return (
-    <div
-      style={{
-        background: "#111827",
-        borderRadius: 24,
-        padding: 40,
-        border: "1px solid #1F2937",
-        opacity: visible ? 1 : 0,
-        transition: "all 0.7s ease 0.3s",
-      }}
-    >
-      {submitted ? (
-        <ContactSuccess onReset={handleReset} name={submittedName} />
-      ) : (
-        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          <NameEmailRow form={form} errors={errors} inputStyle={getInputStyle} onUpdate={update} />
-          <SituationTypeRow form={form} errors={errors} inputStyle={getInputStyle} onUpdate={update} />
-          <MessageField form={form} errors={errors} inputStyle={getInputStyle} onUpdate={update} />
-          {serverError && <ServerErrorBanner />}
-          <Button
-            variant="primary"
-            onClick={handleSubmit}
-            style={{
-              width: "100%",
-              justifyContent: "center",
-              padding: "15px",
-              fontSize: 16,
-              opacity: loading ? 0.7 : 1,
-            }}
-          >
-            {loading ? "Sending..." : "Send Message →"}
-          </Button>
-        </div>
-      )}
-    </div>
+    <>
+      <style>{`
+        @media (max-width: 480px) {
+          .contact-form-card {
+            padding: 24px 16px !important;
+            border-radius: 16px !important;
+          }
+        }
+      `}</style>
+      <div
+        className="contact-form-card"
+        style={{
+          background: "#111827",
+          borderRadius: 24,
+          padding: 40,
+          border: "1px solid #1F2937",
+          opacity: visible ? 1 : 0,
+          transition: "all 0.7s ease 0.3s",
+        }}
+      >
+        {submitted ? (
+          <ContactSuccess onReset={handleReset} name={submittedName} />
+        ) : (
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+            <NameEmailRow form={form} errors={errors} inputStyle={getInputStyle} onUpdate={update} />
+            <SituationTypeRow form={form} errors={errors} inputStyle={getInputStyle} onUpdate={update} />
+            <MessageField form={form} errors={errors} inputStyle={getInputStyle} onUpdate={update} />
+            {serverError && <ServerErrorBanner />}
+            <Button
+              variant="primary"
+              onClick={handleSubmit}
+              style={{
+                width: "100%",
+                justifyContent: "center",
+                padding: "15px",
+                fontSize: 16,
+                opacity: loading ? 0.7 : 1,
+              }}
+            >
+              {loading ? "Sending..." : "Send Message →"}
+            </Button>
+          </div>
+        )}
+      </div>
+    </>
   );
 }
