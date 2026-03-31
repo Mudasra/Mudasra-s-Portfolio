@@ -14,7 +14,7 @@ export const PROJECTS = [
     id: 2,
     title: "ClarityCoach Funnel",
     image: "/Coach-Funnel.png",
-    desc: "A full lead-generation funnel for a career clarity coach, built around a free 7-day plan offer. Includes a high-converting opt-in landing page with urgency triggers and social proof, a thank-you page, and a book-a-call page — designed to take cold visitors from stuck to booked in three steps.",
+    desc: "A full lead-generation funnel for a career clarity coach, built around a free 7-day plan offer. Includes a high-converting opt-in landing page with urgency triggers and social proof, a thank-you page, and a book-a-call page, designed to take cold visitors from stuck to booked in three steps.",
     tags: ["Lead Funnel", "Opt-in Page", "Book a Call"],
     cat: "Coach Funnel",
     live: "https://career-clarity-conversion-funnel.vercel.app/",
