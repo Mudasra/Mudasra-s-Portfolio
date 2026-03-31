@@ -17,7 +17,7 @@ export const PROJECTS = [
     desc: "A full lead-generation funnel for a career clarity coach, built around a free 7-day plan offer. Includes a high-converting opt-in landing page with urgency triggers and social proof, a thank-you page, and a book-a-call page — designed to take cold visitors from stuck to booked in three steps.",
     tags: ["Lead Funnel", "Opt-in Page", "Book a Call"],
     cat: "Coach Funnel",
-    live: "https://career-clarity-conversion-funnel.vercel.app/book-call",
+    live: "https://career-clarity-conversion-funnel.vercel.app/",
     github: "https://github.com/Mudasra/career-clarity-conversion-funnel",
     gradient: "from-violet-500/20 to-purple-700/20",
   },
