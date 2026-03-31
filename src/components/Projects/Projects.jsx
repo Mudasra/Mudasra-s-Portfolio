@@ -11,8 +11,8 @@ export function Projects() {
   const ref = useRef(null);
   const categories = [
     // "All",
-    // "Landing Pages",
-    // "Coach Funnels"
+    // "Landing Page",
+    // "Coach Funnel"
   ];
 
   useEffect(() => {
