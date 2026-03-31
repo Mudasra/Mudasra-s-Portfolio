@@ -2,7 +2,6 @@ import React from "react";
 import { LuGithub } from "react-icons/lu";
 import { FiLinkedin } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
-import { LuFacebook } from "react-icons/lu";
 import { AvailabilityBadge } from "./Availabilitybadge";
 import { SocialLinkList } from "./Sociallinklist";
 import { ContactBlurb } from "./Contactblurb";
@@ -25,12 +24,6 @@ const SOCIAL_LINKS = [
     label: "GitHub",
     value: "github.com/mudasra",
     href: "https://github.com/mudasra",
-  },
-  {
-    icon: <LuFacebook size={25} color="#00D4FF" strokeWidth={1.5} />,
-    label: "Facebook",
-    value: "facebook.com/mudasradev",
-    href: "https://www.facebook.com/mudasradev/",
   },
 ];
 
