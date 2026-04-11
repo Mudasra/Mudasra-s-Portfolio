@@ -13,7 +13,8 @@ const stackItems = [
 
 export function TechOrb({ mounted }) {
   const radius = 120;
-  const size = radius * 2;
+  const containerSize = 320;
+  const center = containerSize / 2;
 
   return (
     <div
@@ -27,20 +28,15 @@ export function TechOrb({ mounted }) {
         transition: "opacity 1s ease 0.3s",
       }}
     >
-      <div
-        style={{
-          width: 320,
-          height: 320,
-          position: "relative",
-        }}
-      >
+      <div style={{ width: containerSize, height: containerSize, position: "relative" }}>
+
         <div
           style={{
             position: "absolute",
             left: "50%",
             top: "50%",
-            width: 320,
-            height: 320,
+            width: containerSize,
+            height: containerSize,
             transform: "translate(-50%, -50%)",
             borderRadius: "50%",
             border: "1px solid rgba(255,255,255,0.05)",
@@ -52,8 +48,8 @@ export function TechOrb({ mounted }) {
             position: "absolute",
             left: "50%",
             top: "50%",
-            width: size,
-            height: size,
+            width: radius * 2,
+            height: radius * 2,
             transform: "translate(-50%, -50%)",
             borderRadius: "50%",
             border: "1px solid rgba(0,212,255,0.15)",
@@ -68,27 +64,21 @@ export function TechOrb({ mounted }) {
           }}
         >
           {stackItems.map((item, i) => {
-            const angle = (i / stackItems.length) * 360;
+            const angle = (i / stackItems.length) * 2 * Math.PI - Math.PI / 2;
+            const x = center + radius * Math.cos(angle);
+            const y = center + radius * Math.sin(angle);
 
             return (
               <div
                 key={item}
                 style={{
                   position: "absolute",
-                  left: "50%",
-                  top: "50%",
-                  transform: `rotate(${angle}deg) translate(${radius}px)`,
-                  transformOrigin: "0 0",
+                  left: x,
+                  top: y,
+                  animation: "counterSpin 45s linear infinite",
                 }}
               >
-                <div
-                  style={{
-                    transform: "translate(-50%, -50%)",
-                    animation: "spin 45s linear infinite reverse",
-                  }}
-                >
-                  <Badge>{item}</Badge>
-                </div>
+                <Badge>{item}</Badge>
               </div>
             );
           })}
@@ -103,8 +93,7 @@ export function TechOrb({ mounted }) {
             width: 120,
             height: 120,
             borderRadius: "50%",
-            background:
-              "linear-gradient(135deg, #00D4FF20, #764ABC20)",
+            background: "linear-gradient(135deg, #00D4FF20, #764ABC20)",
             border: "1px solid #00D4FF30",
             display: "flex",
             alignItems: "center",
@@ -114,6 +103,7 @@ export function TechOrb({ mounted }) {
         >
           <FaReact size={48} color="#00D4FF" />
         </div>
+
       </div>
     </div>
   );
